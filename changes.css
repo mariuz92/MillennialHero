@@ -8,6 +8,26 @@
     height: 55%!important;
 }
 
+.purple_bg{
+    background-image: url(img/bg-img/Description_bg.png);
+    background-position: bottom center;
+    background-size: cover;
+    padding:50px 0px;
+   
+}
+
+.special_description_content_second > h2 {
+    color: #ffffff;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.special_description_content_second > p {
+    color: #ffffff;
+    
+    margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 400px) {
     .logo {
         width: 60px;
