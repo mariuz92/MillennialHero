@@ -10,7 +10,8 @@
         height: 40px;
         min-width: 152px;
         line-height: 36px;
-        font-size: 14px;
+        
+
     }
     .welcome-thumb {
         width: 50%;
@@ -93,7 +94,7 @@
         height: 40px;
         min-width: 160px;
         line-height: 36px;
-        font-size: 14px;
+       
     }
     .counter-area {
         min-width: 50px;

@@ -5,7 +5,7 @@
 }
 
 .h-55{
-    height: 55%!important;
+    height: 75%!important;
 }
 
 .purple_bg{
@@ -24,18 +24,31 @@
 
 .special_description_content_second > p {
     color: #ffffff;
-    
     margin-bottom: 30px;
 }
+
+
 
 @media only screen and (max-width: 400px) {
     .logo {
         width: 60px;
     }
     .welcome-thumb{
-        bottom: 200px;
+        bottom: 170px;
     }
-   
+    
+    .special_description_content_second > h2 {
+        font-size: 30px;
+    }
+    .special_description_content_second > p {
+        font-size: 16px;
+    }
+    .h-55{
+        height: 45%!important;
+    }
+    .wellcome-heading{
+        margin-top: 120px;
+    }
 }
 
 @media only screen and (min-width: 401px) and (max-width:768px) {
@@ -43,6 +56,23 @@
         width: 80px;
     }
     .welcome-thumb{
-        bottom: 200px;
+        bottom: 170px;
+    }
+    .special_description_content_second > h2 {
+        font-size: 30px;
+    }
+    .special_description_content_second > p {
+        font-size: 16px;
+    }
+
+    .sing-up-button{
+        text-align: center;
+        margin-top: 0;
+    }
+    .h-55{
+        height: 45%!important;
+    }
+    .wellcome-heading{
+        margin-top: 120px;
     }
 }
