@@ -27,6 +27,44 @@
     margin-bottom: 30px;
 }
 
+.hero-description > h2 {
+    color: #5b32b4;
+    font-size: 36px;
+    text-align: center;
+}
+
+.hero-description > p {
+    color: #726a84;
+    margin-bottom: 0;
+}
+
+.sing-up-button_hero {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sing-up-button_hero > a {
+    color: #884bdf;
+    font-weight: 500;
+    display: inline-block;
+    border: 2px solid #fb397d;
+    height: 50px;
+    min-width: 178px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 24px 24px 24px 0px;
+    font-size: 18px;
+}
+
+.sing-up-button_hero > a:hover {
+    background: #fb397d;
+    color: #fff;
+    border-color: transparent;
+    -webkit-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
 
 
 @media only screen and (max-width: 400px) {
@@ -34,7 +72,7 @@
         width: 60px;
     }
     .welcome-thumb{
-        bottom: 170px;
+        bottom: 160px;
     }
     
     .special_description_content_second > h2 {
@@ -49,6 +87,11 @@
     .wellcome-heading{
         margin-top: 120px;
     }
+
+    .sing-up-button{
+        margin-top: 10px;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 401px) and (max-width:768px) {
@@ -56,7 +99,7 @@
         width: 80px;
     }
     .welcome-thumb{
-        bottom: 170px;
+        bottom: 160px;
     }
     .special_description_content_second > h2 {
         font-size: 30px;
@@ -67,7 +110,8 @@
 
     .sing-up-button{
         text-align: center;
-        margin-top: 0;
+        margin-top: 10px;
+        color: #5b32b4;
     }
     .h-55{
         height: 45%!important;
