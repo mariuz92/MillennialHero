@@ -27,7 +27,7 @@
             items: 1,
             loop: true,
             autoplay: true,
-            smartSpeed: 800,
+            smartSpeed: 2800,
             margin: 30,
             center: true,
             dots: true,
@@ -39,7 +39,7 @@
                     items: 3
                 },
                 992: {
-                    items: 5
+                    items: 3
                 }
             }
         });
@@ -58,7 +58,7 @@
         $('.slider-nav').slick({
             slidesToShow: 3,
             slidesToScroll: 1,
-            speed: 500,
+            speed: 1500,
             asNavFor: '.slider-for',
             dots: true,
             centerMode: true,

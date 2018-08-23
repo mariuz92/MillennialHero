@@ -4,6 +4,16 @@
 
 }
 
+
+
+.caption {
+    text-align: center;   
+}
+
+
+
+
+
 .h-55{
     height: 75%!important;
 }
@@ -30,12 +40,13 @@
 .hero-description > h2 {
     color: #5b32b4;
     font-size: 36px;
-    text-align: center;
+    text-align: right;
 }
 
 .hero-description > p {
     color: #726a84;
     margin-bottom: 0;
+    text-align: right
 }
 
 .sing-up-button_hero {
