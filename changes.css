@@ -4,6 +4,19 @@
 
 }
 
+.img-circle{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.icon > img{
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
 
 
 .caption {
@@ -11,7 +24,10 @@
 }
 
 
-
+.sub-title{
+    color: white;
+    font-size: 30px;
+}
 
 
 .h-55{
@@ -103,6 +119,11 @@
         margin-top: 10px;
         text-align: center;
     }
+
+    .sub-title{
+        color: white;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (min-width: 401px) and (max-width:768px) {
@@ -129,5 +150,10 @@
     }
     .wellcome-heading{
         margin-top: 120px;
+    }
+
+    .sub-title{
+        color: white;
+        font-size: 20px;
     }
 }
