@@ -47,7 +47,13 @@ html {
 .logo{
     width: 120px;
     margin-top: 3px;
+    text-align: center;
 
+}
+
+.footer-logo{
+    width: 240px;
+    height: 120px;
 }
 
 .img-bodies{
