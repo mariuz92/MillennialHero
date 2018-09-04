@@ -4,7 +4,7 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = "mariotilita@gmail.com";
+$from = "hello@themillennialhero.com";
 
 // an email address that will receive the email with the output of the form
 $sendTo = 'mariotilita@gmail.com';
@@ -34,7 +34,7 @@ try
 
     if(count($_POST) == 0) throw new \Exception('Form is empty');
             
-    $emailText = "You have a new message from your contact form\n=============================\n";
+    $emailText = "You have a new message from MillennialHero Kickstarter campaign\n=============================\n";
 
     foreach ($_POST as $key => $value) {
         // If the field exists in the $fields array, include it in the email 
