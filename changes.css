@@ -88,11 +88,17 @@ html {
 
 .icon > img{
     border-radius: 50%;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    
-    
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-right: 7px;
+       
+}
+
+.icon > h5{
+    align-self: center;
+    font-size: 22px;
+    color: #5b32b4;
 }
 
 
