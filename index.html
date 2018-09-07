@@ -828,7 +828,7 @@
                 <div class="col-md-6">
                     <!-- Form Start-->
                     <div class="contact_from">
-                        <form  method="post" action="https://www.formbackend.com/f/j7ekaxnx" target="_blank">
+                        <form  method="post" id="form_action" action="" target="_blank" >
                             <!-- Message Input Area Start -->
                             <div class="contact_input_area">
                                 <div class="row">
@@ -853,7 +853,7 @@
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
-                                        <button type="submit" class="btn submit-btn"  id="submit_form">Send Now</button>
+                                        <button type="submit" class="btn submit-btn" onclick="Send_ga()" id="submit_form">Send Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -902,25 +902,15 @@
 
     <!-- preload event -->
     <script>
-        // Gets a reference to the form element, assuming
-        // it contains the id attribute "signup-form".
-        var form = document.getElementById('submit_form');
+
+    function Send_ga(){
+        ga('send', 'event', 'Signup_Form', 'submit','Landing_Kickstarter');
+        console.log("Sent to GA");
+        var get_email=document.getElementById('form_action').action="https://www.formbackend.com/f/j7ekaxnx";
+        console.log("submitted")
         
-        // Adds a listener for the "submit" event.
-        form.addEventListener('submit', function(event) {
-        
-          // Prevents the browser from submitting the form
-          // and thus unloading the current page.
-          event.preventDefault();
-        
-          // Sends the event to Google Analytics and
-          // resubmits the form once the hit is done.
-          ga('send', 'event', 'Signup Form', 'submit', {
-            hitCallback: function() {
-              form.submit();
-            }
-          });
-        });</script>
+    }
+</script>
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Popper js 
