@@ -898,7 +898,11 @@
     <script>
 
     function Send_ga(){
-        ga('send', 'event', 'Signup_Form', 'submit','Landing_Kickstarter');
+        gtag('event', submit, {
+                'event_category': Signup_Form,
+                'event_label': Landing_Kickstarter,
+                
+              });
         console.log("Sent to GA");
         var get_email=document.getElementById('form_action').action="https://www.formbackend.com/f/j7ekaxnx";
         console.log("submitted")
