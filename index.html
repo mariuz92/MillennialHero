@@ -853,7 +853,7 @@
                                     </div>
                                     <!-- Single Input Area Start -->
                                     <div class="col-12">
-                                        <button type="submit" class="btn submit-btn" onclick="ga('send', 'event', 'Interested', 'Email_sent', 'Landing_Kickstarter');">Send Now</button>
+                                        <button type="submit" class="btn submit-btn"  id="submit_form">Send Now</button>
                                     </div>
                                 </div>
                             </div>
@@ -900,7 +900,27 @@
     </footer>
     <!-- ***** Footer Area Start ***** -->
 
-   
+    <!-- preload event -->
+    <script>
+        // Gets a reference to the form element, assuming
+        // it contains the id attribute "signup-form".
+        var form = document.getElementById('submit_form');
+        
+        // Adds a listener for the "submit" event.
+        form.addEventListener('submit', function(event) {
+        
+          // Prevents the browser from submitting the form
+          // and thus unloading the current page.
+          event.preventDefault();
+        
+          // Sends the event to Google Analytics and
+          // resubmits the form once the hit is done.
+          ga('send', 'event', 'Signup Form', 'submit', {
+            hitCallback: function() {
+              form.submit();
+            }
+          });
+        });</script>
     <!-- Jquery-2.2.4 JS -->
     <script src="js/jquery-2.2.4.min.js"></script>
     <!-- Popper js 
